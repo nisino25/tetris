@@ -35,9 +35,10 @@
       <button @click="moveTo('left')" v-on:keyup.enter="moveTo('left')">←</button>
       <button @click="moveTo('down')">↓</button>
       <button @click="moveTo('right')">→</button>
+      &nbsp;&nbsp;
 
-      <img @click="rotate()" style="margin-top:13px; background-color:white; width:30%; height:auto" src="../public/iconmonstr-refresh-1.svg" >
-      <button style="margin-top:-20px" @click="downHard()">down</button>
+      <img @click="rotate()" style="margin-top:13px; background-color:white; " src="../public/iconmonstr-refresh-1.svg" >
+      <button  @click="downHard()">down</button>
       
       <!-- <button @click="moveTo('drop')">↓</button> -->
     </div>
@@ -2009,6 +2010,7 @@ export default {
 
 <style>
 #app {
+  touch-action: manipulation;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
