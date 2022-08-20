@@ -1,7 +1,8 @@
 <template>
   <div class="wrapper">
-    <button @click="test()" >test</button>&nbsp;
-    <button @click="generate()" >generate</button>
+    
+    <!-- <button  @click="test()" >test</button>&nbsp; -->
+    <button style="margin-left:250px" @click="generate()" >generate</button>
 
     <div class="playingArea">
       <template v-for="(item,index) in dotsMap" :key="index">
@@ -2027,7 +2028,7 @@ export default {
   position: absolute;
   /* background: #00003B; */
   /* background: #4f86f7; */
-  top:30px;
+  top:10px;
   left: 10px;
 
   height: 500px;
@@ -2096,12 +2097,12 @@ export default {
 .controller{
   position: absolute;
   background: #00003B;
-  top :550px;
+  top :520px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-/* .controller button{
-  font-size: 200%;
-} */
+.controller button{
+  font-size: 150%;
+}
 </style>
