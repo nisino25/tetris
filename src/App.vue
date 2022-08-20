@@ -2101,9 +2101,7 @@ export default {
   transform: translateX(-50%);
 }
 
-.controller button{
-  /* width: 150%;
-  height: auto; */
+/* .controller button{
   font-size: 200%;
-}
+} */
 </style>
