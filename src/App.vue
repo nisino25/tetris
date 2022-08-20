@@ -2103,6 +2103,6 @@ export default {
 }
 
 .controller button{
-  font-size: 150%;
+  /* font-size: 150%; */
 }
 </style>
