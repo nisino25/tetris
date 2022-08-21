@@ -33,10 +33,10 @@
     </div>
 
     <div class="controller">
-      <button style=" left: 20px; top:520px" @click="moveTo('left')" v-on:keyup.enter="moveTo('left')">←</button>
-      <button style=" left: 275px; top:520px" @click="moveTo('right')" v-on:keyup.enter="moveTo('right')">→</button>
-      <button style=" left: 100px; top:520px" @click="downHard()" v-on:keyup.enter="downHard()">↓</button>
-      <button style=" left: 180px; top:520px" @click="rotate()" v-on:keyup.enter="downHard()"><i class="fa fa-refresh" style=""></i></button>
+      <button style=" left: 20px; top:485px" @click="moveTo('left')" v-on:keyup.enter="moveTo('left')">←</button>
+      <button style=" left: 275px; top:485px" @click="moveTo('right')" v-on:keyup.enter="moveTo('right')">→</button>
+      <button style=" left: 100px; top:485px" @click="downHard()" v-on:keyup.enter="downHard()">↓</button>
+      <button style=" left: 180px; top:485px" @click="rotate()" v-on:keyup.enter="downHard()"><i class="fa fa-refresh" style=""></i></button>
       <!-- <button @click="moveTo('down')">↓</button>
       <button @click="moveTo('right')">→</button>
       &nbsp;&nbsp;
@@ -2103,7 +2103,7 @@ export default {
 
 .controller button{
   position:absolute;
-  /* opacity:0.6; */
+  opacity:0.6;
 }
 
 button {
