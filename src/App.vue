@@ -38,7 +38,7 @@
       <button @click="moveTo('right')">→</button>
       &nbsp;&nbsp;
 
-      <img @click="rotate()" style="margin-top:13px; background-color:white; " src="../public/iconmonstr-refresh-1.svg" >
+      <img @click="rotate()" style=" background-color:white; " src="../public/iconmonstr-refresh-1.svg" >
       <button  @click="downHard()">down</button>
       
       <!-- <button @click="moveTo('drop')">↓</button> -->
@@ -89,12 +89,12 @@ export default {
       
       let height  = index - (index % 10); // This will subtract off the last digit.
       height = height / 10;
-      height = height * 25
+      height = height * 20
 
       style = `bottom: ${height}px;`
 
       let left = +index.toString().split('').pop();
-      left = left * 25
+      left = left * 20
 
       style = style + ` left: ${left}px;`
 
@@ -111,12 +111,12 @@ export default {
       
       let height  = index - (index % 10); // This will subtract off the last digit.
       height = height / 10;
-      height = height * 25
+      height = height * 20
 
       style = `bottom: ${height}px;`
 
       let left = +index.toString().split('').pop();
-      left = left * 25
+      left = left * 20
 
       style = style + ` left: ${left}px;`
 
@@ -2028,10 +2028,10 @@ export default {
   position: absolute;
   /* background: #00003B; */
   /* background: #4f86f7; */
-  top:10px;
-  left: 10px;
+  top:5px;
+  left: 30px;
 
-  height: 500px;
+  height: 420px;
   width: 250px;
   /* border: 5px solid  MediumSlateBlue; */
 }
@@ -2041,8 +2041,8 @@ export default {
   position:absolute;
   
 
-  height: 21px;
-  width: 21px;
+  height: 16px;
+  width: 16px;
 
   padding: 2px;
 
@@ -2056,8 +2056,8 @@ export default {
   position:absolute;
   
 
-  height: 21px;
-  width: 21px;
+  height: 16px;
+  width: 16px;
 
   padding: 2px;
 
@@ -2097,12 +2097,12 @@ export default {
 .controller{
   position: absolute;
   background: #00003B;
-  top :520px;
+  top :450px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .controller button{
-  /* font-size: 150%; */
+  font-size: 50px;
 }
 </style>
