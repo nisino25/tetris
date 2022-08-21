@@ -2,7 +2,7 @@
   <div class="wrapper">
     
     <!-- <button  @click="test()" >test</button>&nbsp; -->
-    <button style="margin-left:250px" @click="generate()" >generate</button>
+    <button style="position:absolute; left: 300px; top: 400px" @click="generate()" >start</button>
 
     <div class="playingArea">
       <template v-for="(item,index) in dotsMap" :key="index">
@@ -33,13 +33,15 @@
     </div>
 
     <div class="controller">
-      <button @click="moveTo('left')" v-on:keyup.enter="moveTo('left')">←</button>
-      <button @click="moveTo('down')">↓</button>
+      <button style="font-size: 40px; left: 50px; top:540px" @click="moveTo('left')" v-on:keyup.enter="moveTo('left')">←</button>
+      <button style="font-size: 40px; left: 200px; top:540px" @click="moveTo('right')" v-on:keyup.enter="moveTo('right')">→</button>
+      <button style="font-size: 40px; left: 140px; top:540px" @click="downHard()" v-on:keyup.enter="downHard()">↓</button>
+      <!-- <button @click="moveTo('down')">↓</button>
       <button @click="moveTo('right')">→</button>
       &nbsp;&nbsp;
 
       <img @click="rotate()" style=" background-color:white; " src="../public/iconmonstr-refresh-1.svg" >
-      <button  @click="downHard()">down</button>
+      <button  @click="downHard()">down</button> -->
       
       <!-- <button @click="moveTo('drop')">↓</button> -->
     </div>
@@ -89,18 +91,15 @@ export default {
       
       let height  = index - (index % 10); // This will subtract off the last digit.
       height = height / 10;
-      height = height * 20
+      height = height * 27.5
 
       style = `bottom: ${height}px;`
 
       let left = +index.toString().split('').pop();
-      left = left * 20
+      left = left * 27.5
 
       style = style + ` left: ${left}px;`
-
       style = style + ` background: ${this.dotsMap[index]};`
-
-
 
       return style
 
@@ -111,12 +110,12 @@ export default {
       
       let height  = index - (index % 10); // This will subtract off the last digit.
       height = height / 10;
-      height = height * 20
+      height = height * 27.5
 
       style = `bottom: ${height}px;`
 
       let left = +index.toString().split('').pop();
-      left = left * 20
+      left = left * 27.5
 
       style = style + ` left: ${left}px;`
 
@@ -2029,9 +2028,9 @@ export default {
   /* background: #00003B; */
   /* background: #4f86f7; */
   top:5px;
-  left: 30px;
+  left: 10px;
 
-  height: 420px;
+  height: 550px;
   width: 250px;
   /* border: 5px solid  MediumSlateBlue; */
 }
@@ -2041,8 +2040,8 @@ export default {
   position:absolute;
   
 
-  height: 16px;
-  width: 16px;
+  height: 23.5px;
+  width: 23.5px;
 
   padding: 2px;
 
@@ -2056,8 +2055,8 @@ export default {
   position:absolute;
   
 
-  height: 16px;
-  width: 16px;
+  height: 23.5px;
+  width: 23.5px;
 
   padding: 2px;
 
@@ -2072,7 +2071,7 @@ export default {
   position: absolute;
   background: #00003B;
   top:50px;
-  right: 15px;
+  right: 5px;
 
   height: 160px;
   width: 60px;
@@ -2096,13 +2095,14 @@ export default {
 
 .controller{
   position: absolute;
-  background: #00003B;
+  /* background: #00003B;
   top :450px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
 }
 
 .controller button{
-  font-size: 50px;
+  position:absolute;
+  opacity:0.6;
 }
 </style>
