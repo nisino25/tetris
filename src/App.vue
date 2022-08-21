@@ -92,12 +92,12 @@ export default {
       
       let height  = index - (index % 10); // This will subtract off the last digit.
       height = height / 10;
-      height = height * 26
+      height = height * 24
 
       style = `bottom: ${height}px;`
 
       let left = +index.toString().split('').pop();
-      left = left * 26
+      left = left * 24
 
       style = style + ` left: ${left}px;`
       style = style + ` background: ${this.dotsMap[index]};`
@@ -111,12 +111,12 @@ export default {
       
       let height  = index - (index % 10); // This will subtract off the last digit.
       height = height / 10;
-      height = height * 26
+      height = height * 24
 
       style = `bottom: ${height}px;`
 
       let left = +index.toString().split('').pop();
-      left = left * 26
+      left = left * 24
       style = style + ` left: ${left}px;`
 
 
@@ -2030,7 +2030,7 @@ export default {
   top:0px;
   left: 10px;
 
-  height: 515px;
+  height: 475px;
   width: 250px;
   /* border: 5px solid  MediumSlateBlue; */
 }
@@ -2040,8 +2040,8 @@ export default {
   position:absolute;
   
 
-  height: 22px;
-  width: 22px;
+  height: 20px;
+  width: 20px;
 
   padding: 2px;
 
@@ -2055,8 +2055,8 @@ export default {
   position:absolute;
   
 
-  height: 22px;
-  width: 22px;
+  height: 20px;
+  width: 20px;
 
   padding: 2px;
 
@@ -2103,14 +2103,14 @@ export default {
 
 .controller button{
   position:absolute;
-  opacity:0.6;
+  /* opacity:0.6; */
 }
 
 button {
-  /* background-color: ; Green */
+  background-color:  #4CAF50;
   border: none;
-  color: black;
-  padding: 10px 20px;
+  color: white;
+  padding: 7.5px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
